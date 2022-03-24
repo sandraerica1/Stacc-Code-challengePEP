@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Stacc.css">
+    <link rel="stylesheet" href="CSS/person.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <script src="JavaScript/stacc1.js" defer></script>
+    <title>PEP</title>
+</head>
+<body>
+
+    <div id="sideNav">
+        <div id="navHeader">
+            <a href="index.html"><h1>Know your costumer</h1></a>
+            <a>PEP</a>
+        </div>
+        <div class ="sideNav_menu">
+            <a href="person.html">
+                <svg viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg" class="svg">
+                    <path d="M4 0c-1.1 0-2 1.12-2 2.5s.9 2.5 2 2.5 2-1.12 2-2.5-.9-2.5-2-2.5zm-2.09 5c-1.06.05-1.91.92-1.91 2v1h8v-1c0-1.08-.84-1.95-1.91-2-.54.61-1.28 1-2.09 1-.81 0-1.55-.39-2.09-1z" />
+                </svg>
+            </a>
+            <a href="person.html" class="sideNav_a" id="nav_person">Person</a>
+        </div>
+        <div class ="sideNav_menu">
+            <a href="company.html">
+                <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"viewBox="0 0 512 512" class="svg">
+                    <path d="M485.878,480.469v-95.774h-84.637V96.7h-33.646V42.856h-95.922V0.184h-31.347v42.671h-95.922v53.844h-33.646v287.995H26.122v95.775H0v31.347h26.122h84.637h35.631h1.996h215.228h1.996h35.631h84.637H512v-31.347H485.878z M365.61,480.47h-31.347V181.597h-29.999V480.47h-31.347V181.597h-31.692V480.47h-31.347V181.597h-32.141V480.47H146.39V150.251h219.22V480.47z"/>
+                </svg>
+            </a>
+            <a href="company.html" class="sideNav_a">Company</a>
+        </div>
+
+    </div>
+
+    <div id="display">
+        <h1>Person PEP-check</h1>
+        <div id=inputs_display>
+            <div id="display_line1" class="display_input">
+                <label for="fullname" class="required">Full name</label>
+                <input type="text" id="fullname" data-search>
+        </div>
+
+        <div id="buttons">
+            <button class="button2" onclick="onCancel()">Empty</button>
+            <button class="button1" onclick="load_data()">Search</button>
+        </div>
+        </div>
+        <div id="pep_result"></div>
+        <div id=table_content>
+            <table class="user-cards" data-user-cards-container>
+                <tr id="table_titles">
+                    <td id="table_name"></td>
+                    <td id="table_score"></td>
+                    <td id="table_dataset"></td>
+                    <td id="table_sanctions"></td>
+                </tr>
+        
+            </table>
+                <template id="template" data-user-template>
+                    <tr class="card">
+                        <td class="name" data-name></td>
+                        <td class="score" data-score></td>
+                        <td class="dataset" data-dataset></td>
+                        <td class="sanctions" data-sanctions></td>
+                    </tr>
+                </template>
+        </div>
+  
+    </div>
+
+
+
+</body>
+
+</html>
