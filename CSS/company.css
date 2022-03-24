@@ -1,0 +1,17 @@
+#company_info {
+  background-color: #f0f4f8;
+  width: 40%;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  color: #415296;
+}
+#company_info div {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  line-height: 30px;
+  font-size: 20;
+}

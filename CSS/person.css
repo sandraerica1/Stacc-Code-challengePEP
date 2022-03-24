@@ -1,0 +1,24 @@
+#nav_person {
+  text-decoration: underline;
+}
+
+#pep_result {
+  padding-top: 20px;
+  text-align: center;
+  color: #415296;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 20px;
+  padding-bottom: 30px;
+  text-decoration: underline;
+}
+
+#table_titles td {
+  font-weight: 800;
+  color: #415296;
+}
+
+#table_content {
+  text-align: center;
+}
